@@ -1,0 +1,42 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ai-codebase-documentation",
+  "version": "1.0.0",
+  "description": "Create, audit, update, and maintain software-repository documentation against code evidence.",
+  "author": {
+    "name": "César Jessé Enríquez Rodríguez",
+    "url": "https://github.com/CesarJER"
+  },
+  "homepage": "https://github.com/CesarJER/ai-codebase-documentation",
+  "repository": "https://github.com/CesarJER/ai-codebase-documentation.git",
+  "license": "GPL-3.0-or-later",
+  "keywords": [
+    "documentation",
+    "ai",
+    "llm",
+    "codebase",
+    "mcp"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [
+          "Interactive"
+        ],
+        "category": "Productivity",
+        "websiteURL": "https://github.com/CesarJER/ai-codebase-documentation",
+        "logo": "./assets/logo.png",
+        "composerIcon": "./assets/logo.png",
+        "defaultPrompt": [
+          "Audit this repository's documentation against the current code and report evidenced drift, gaps, and contradictions.",
+          "Update the documentation affected by these code changes, preserving existing conventions and grounding every material claim in implementation evidence.",
+          "Create or improve repository documentation for this codebase, using the code as the source of truth and validating the result at the appropriate level."
+        ],
+        "developerName": "César Jessé Enríquez Rodríguez",
+        "displayName": "Codebase Documentation",
+        "longDescription": "Create, audit, update, and maintain repository documentation against implementation evidence, including READMEs, developer guides, architecture, ADRs, API and configuration references, runbooks, troubleshooting, comments, examples, diagrams, drift analysis, and documentation change impact.",
+        "shortDescription": "Docs grounded in code"
+      }
+    }
+  }
+}

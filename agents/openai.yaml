@@ -1,0 +1,3 @@
+interface:
+  display_name: "Codebase Documentation"
+  short_description: "Maintain repository docs with code evidence and change impact"
